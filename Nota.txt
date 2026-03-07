@@ -1,0 +1,34 @@
+Al instalar el proyecto GestionEmpleados 
+
+Realizar los siguientes pasos:
+
+
+Desbloquear todos los archivos que terminen en resx.
+
+Desbloquear el mismo proyecto que termina sln
+
+Pasos para desbloquear estos archivos:
+
+Despues de abrir en proyecto en el explorador de archivo, en la parte superior del lado derecho tenemos un buscador, ahi podremos resx y todos los archivos que aparezcan clic derecho y propiedades, al final desbloqueamos, aplicamos y aceptamos y ya con esto el proyecto funcionara correctamente.
+
+
+Por ultimo en el codigo: frmEmpleados.cs
+
+
+			txtNombre.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Nombre"].Value);
+            txtDireccion.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Direccción"].Value);
+            txtTelefono.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Teléfono"].Value);
+            txtSalario.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Salario"].Value);
+            cmbDepartamento.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Departamento"].Value);
+            cmbCargo.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Cargo"].Value);
+            dtpFechaNacimiento.Value = Convert.ToDateTime(dgvLista.CurrentRow.Cells["Fecha de Nacimiento"].Value);
+
+Lo reemplazaremos por este:
+
+            txtNombre.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Nombre"].Value);
+			txtDireccion.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Direccion"].Value);
+			txtTelefono.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Telefono"].Value);
+			txtSalario.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Salario"].Value);
+			cmbDepartamento.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Departamento"].Value);
+			cmbCargo.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Cargo"].Value);
+			dtpFechaNacimiento.Value = Convert.ToDateTime(dgvLista.CurrentRow.Cells["FechaNacimiento"].Value);
